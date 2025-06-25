@@ -37,6 +37,30 @@ Each filename encodes metadata such as emotion ID and actor ID.
 > Implemented using **TensorFlow Keras**
 
 
+Input: (128, 128, 1) Log-Mel Spectrogram
+
+-> Conv2D
+-> MaxPooling
+-> BatchNormalization
+-> Dropout
+
+-> Conv2D
+-> MaxPooling
+-> BatchNormalization
+-> Dropout
+
+-> Conv2D
+-> MaxPooling
+-> BatchNormalization
+-> Dropout
+
+-> Reshape
+-> BiLSTM
+-> Attention
+
+-> Dense (Softmax, 8-class output)
+
+
 
 ---
 
