@@ -37,13 +37,14 @@ Each filename encodes emotion ID, actor ID, and more.
 > Built using **TensorFlow Keras**
 
 ```text
-Input: (128, 128, 1) Log-Mel Spectrogram
+**Input**: (128, 128, 1) Log-Mel Spectrogram
 
-Conv2D -> MaxPooling -> BatchNormalization -> Dropout  
-Conv2D -> MaxPooling -> BatchNormalization -> Dropout  
-Conv2D -> MaxPooling -> BatchNormalization -> Dropout  
-Reshape -> BiLSTM -> Attention  
-Dense (Softmax, 8-class output)
+→ **Conv2D** → **MaxPooling** → **BatchNormalization** → **Dropout**  
+→ **Conv2D** → **MaxPooling** → **BatchNormalization** → **Dropout**  
+→ **Conv2D** → **MaxPooling** → **BatchNormalization** → **Dropout**  
+→ **Reshape** → **BiLSTM** → **Attention**  
+→ **Dense (Softmax, 8-class output)**
+
 | Emotion   | Precision | Recall | F1-score | Support |
 |-----------|-----------|--------|----------|---------|
 | neutral   | 0.86      | 0.95   | 0.90     | 38      |
@@ -54,6 +55,8 @@ Dense (Softmax, 8-class output)
 | fear      | 0.81      | 0.85   | 0.83     | 75      |
 | disgust   | 0.80      | 0.82   | 0.81     | 39      |
 | surprise  | 0.77      | 0.85   | 0.80     | 39      |
+
+
 
 **Overall Metrics:**
 
