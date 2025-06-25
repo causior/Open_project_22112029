@@ -55,7 +55,7 @@ def predict_emotion(audio_path):
 
 # Streamlit UI
 st.set_page_config(page_title="Speech Emotion Recognition", layout="centered")
-st.title("🎙️ Speech Emotion Recognition")
+st.title(" Speech Emotion Recognition")
 st.write("Upload a `.wav` file (preferably 3 seconds long) and get the predicted emotion.")
 
 uploaded_file = st.file_uploader("Upload a WAV audio file", type=["wav"])
@@ -70,7 +70,7 @@ if uploaded_file is not None:
     try:
         with st.spinner("Analyzing..."):
             emotion = predict_emotion("temp_audio.wav")
-        st.success(f"🎯 Predicted Emotion: **{emotion.upper()}**")
+        st.success(f" Predicted Emotion: **{emotion.upper()}**")
     except Exception as e:
         st.error("Error processing audio file. Please upload a valid .wav file.")
         st.error(str(e))
