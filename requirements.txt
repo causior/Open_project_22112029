@@ -1,4 +1,4 @@
-tensorflow==2.16.1
+tensorflow==2.18.0
 librosa==0.10.1
 soundfile
 streamlit==1.25.0
