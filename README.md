@@ -45,22 +45,36 @@ Each filename encodes emotion ID, actor ID, and more.
 → **Reshape** → **BiLSTM** → **Attention**  
 → **Dense (Softmax, 8-class output)**
 
+
+---
+
+##  Classification Report
+
 | Emotion   | Precision | Recall | F1-score | Support |
 |-----------|-----------|--------|----------|---------|
-| neutral   | 0.86      | 0.95   | 0.90     | 38      |
-| calm      | 0.94      | 0.96   | 0.95     | 75      |
-| happy     | 0.85      | 0.77   | 0.81     | 75      |
-| sad       | 0.82      | 0.72   | 0.77     | 75      |
-| angry     | 0.86      | 0.85   | 0.85     | 75      |
-| fear      | 0.81      | 0.85   | 0.83     | 75      |
-| disgust   | 0.80      | 0.82   | 0.81     | 39      |
-| surprise  | 0.77      | 0.85   | 0.80     | 39      |
+| **Neutral**   | 0.86      | 0.95   | 0.90     | 38      |
+| **Calm**      | 0.94      | 0.96   | 0.95     | 75      |
+| **Happy**     | 0.85      | 0.77   | 0.81     | 75      |
+| **Sad**       | 0.82      | 0.72   | 0.77     | 75      |
+| **Angry**     | 0.86      | 0.85   | 0.85     | 75      |
+| **Fear**      | 0.81      | 0.85   | 0.83     | 75      |
+| **Disgust**   | 0.80      | 0.82   | 0.81     | 39      |
+| **Surprise**  | 0.77      | 0.85   | 0.80     | 39      |
 
+---
 
+##  Overall Metrics
 
-**Overall Metrics:**
+- **Accuracy**: **0.84**
+- **Macro Average F1-score**: **0.84**
+- **Weighted Average F1-score**: **0.84**
 
-- **Accuracy:** 0.84
-- **Macro Average F1-score:** 0.84
-- **Weighted Average F1-score:** 0.84
+---
 
+##  How to Run
+
+### Requirements
+- Python 3.8+
+- TensorFlow
+- Librosa
+- Gradio
