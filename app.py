@@ -23,7 +23,7 @@ class Attention(Layer):
         return K.sum(output, axis=1)
 
 # Load model
-model = load_model("emotion_model.h5", custom_objects={"Attention": Attention})
+model = load_model("model.h5", custom_objects={"Attention": Attention})
 
 # Emotion labels
 class_names = ['neutral', 'calm', 'happy', 'sad', 'angry', 'fear', 'disgust', 'surprise']
