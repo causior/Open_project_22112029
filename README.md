@@ -1,25 +1,25 @@
-# 🎙️ Speech Emotion Recognition Using Deep Learning
+#  Speech Emotion Recognition Using Deep Learning
 
 This project focuses on recognizing human emotions from short audio clips of **speech and song** using a deep learning model. The system is trained on emotion-labeled `.wav` audio files and can predict one of **8 emotions** from an uploaded file using a web interface built with **Gradio**.
 
 ---
 
-## 📌 Project Description
+##  Project Description
 
 Human emotions such as happiness, sadness, anger, and fear are essential in communication. This project uses a **CNN-BiLSTM-Attention model** to classify emotions from audio data by analyzing patterns in **log-Mel spectrograms** extracted from `.wav` files.
 
 ---
 
-## 🎵 Dataset and Preprocessing
+##  Dataset and Preprocessing
 
-### 📁 Dataset Source
+###  Dataset Source
 The dataset consists of `.wav` files categorized by:
 - **Speech Audio**
 - **Song Audio**
 
 Each filename encodes metadata such as emotion ID and actor ID.
 
-### ⚙️ Preprocessing Steps
+###  Preprocessing Steps
 1. **Audio Loading**: Using `librosa` at 22050 Hz, trimmed/padded to 3 seconds.
 2. **Log-Mel Spectrograms**: 128 Mel bands × 128 time frames.
 3. **Zero Padding**: Applied to audio clips < 3 seconds.
@@ -32,7 +32,7 @@ Each filename encodes metadata such as emotion ID and actor ID.
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 > Implemented using **TensorFlow Keras**
 
@@ -40,9 +40,9 @@ Each filename encodes metadata such as emotion ID and actor ID.
 
 ---
 
-## 📊 Performance
+##  Performance
 
-### 🧾 Classification Report
+###  Classification Report
 
 | Emotion   | Precision | Recall | F1-score | Support |
 |-----------|-----------|--------|----------|---------|
@@ -55,16 +55,16 @@ Each filename encodes metadata such as emotion ID and actor ID.
 | Disgust   | 0.80      | 0.82   | 0.81     | 39      |
 | Surprise  | 0.77      | 0.85   | 0.80     | 39      |
 
-### ✅ Overall Metrics
+###  Overall Metrics
 - **Accuracy**: 0.84  
 - **Macro F1-score**: 0.84  
 - **Weighted F1-score**: 0.84
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
-### 🧰 Requirements
+###  Requirements
 Install the required packages:
 
 ```bash
